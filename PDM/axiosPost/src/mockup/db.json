@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Alice",
+      "email": "alice@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "Joao",
+      "email": "joao@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Kawa",
+      "email": "kawa@gmail.com"
+    },
+    {
+      "id": "fd5f",
+      "name": "PedrinBalaTensa",
+      "email": "pedrobala@tensagmail.com"
+    },
+    {
+      "id": "6a47",
+      "name": "Maumau",
+      "email": "maumau@gmail.com"
+    },
+    {
+      "id": "a8f2",
+      "name": "Djdbsndb",
+      "email": "jdjddkdj@gmaol.com"
+    },
+    {
+      "id": "1ef4",
+      "name": "Djdbsndb",
+      "email": "jdjddkdj@gmaol.com"
+    },
+    {
+      "id": "b0d8",
+      "name": "asasass",
+      "email": "asasa"
+    },
+    {
+      "id": "e309",
+      "name": "asas",
+      "email": "assa"
+    }
+  ]
+}
