@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "Alice no pais das maravilhas",
+      "email": "alice@gmail.com",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Joao",
+      "email": "joao@gmail.com"
+    },
+    {
+      "name": "Kawa Viadinho",
+      "email": "kawa@gmail.com",
+      "id": "3"
+    }
+  ]
+}
