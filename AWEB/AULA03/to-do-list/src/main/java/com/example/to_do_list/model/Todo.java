@@ -41,8 +41,8 @@ public class Todo {
     @Column(nullable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
     @NotNull
-    @FutureOrPresent
-    @DateTimeFormat
+    //@FutureOrPresent
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Column(nullable = false)
     private LocalDate deadLine;
     @Column(nullable = true)

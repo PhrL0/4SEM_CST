@@ -82,13 +82,23 @@
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500" th:text="${#temporals.format(todo.deadLine)}">2024-05-19</td>
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500" th:text="${#temporals.format(todo.finishedAt)}">-</td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="#" class="text-green-500 hover:text-green-700 mx-1">
-                  <i class="bi bi-check-circle-fill text-lg"></i>
-                </a>
-                <a href="#" class="text-yellow-500 hover:text-yellow-700 mx-1">
+                <form class="text-green-500 hover:text-green-700 mx-1" th:action="@{/todo/finish/{id}(id=${todo.id})}" method="post">
+                    <button 
+                      type="submit"
+                      title="Marcar como Concluída"
+                      th:classappend="${todo.finishedAt} ? 'disabled' : '' "
+                      >
+                        <i class="bi bi-check-circle-fill text-lg"></i>
+                    </button>
+                </form>
+                <a 
+                  th:href="@{/todo/edit/{id}(id=${todo.id})}" 
+                  class="text-yellow-500 hover:text-yellow-700 mx-1"
+                  th:classappend="${todo.finishedAt} ? 'disabled' : ''"
+                  >
                   <i class="bi bi-pencil-square text-lg"></i>
                 </a>
-                <a href="#" class="text-red-500 hover:text-red-700 mx-1">
+                <a th:href="@{/todo/delete/{id}(id=${todo.id})}" class="text-red-500 hover:text-red-700 mx-1">
                   <i class="bi bi-trash-fill text-lg"></i>
                 </a>
               </td>
