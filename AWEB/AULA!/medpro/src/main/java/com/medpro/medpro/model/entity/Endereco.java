@@ -30,4 +30,48 @@ public class Endereco {
         this.complemento = endereco.complemento();
         this.numero = endereco.numero();
     }
+
+     public void atualizarInformacoes(DadosEndereco endereco) {
+        if(endereco.logradouro() != null){
+            if(endereco.logradouro().isBlank()){
+                throw new IllegalArgumentException("Logradouro não pode ser nulo");
+            } else {
+                this.logradouro = endereco.logradouro();
+            }
+        }
+        if(endereco.bairro() != null){
+            if(endereco.bairro().isBlank()){
+                throw new IllegalArgumentException("bairro não pode ser nulo");
+            } else {
+                this.bairro = endereco.bairro();
+            }
+        }
+        if(endereco.cep() != null){
+            if(endereco.cep().isBlank()){
+                throw new IllegalArgumentException("cep não pode ser nulo");
+            } else {
+                this.cep = endereco.cep();
+            }
+        }
+        if(endereco.cidade() != null){
+            if(endereco.cidade().isBlank()){
+                throw new IllegalArgumentException("cidade não pode ser nulo");
+            } else {
+                this.cidade = endereco.cidade();
+            }
+        }
+        if(endereco.uf() != null){
+            if(endereco.uf().isBlank()){
+                throw new IllegalArgumentException("uf não pode ser nulo");
+            } else {
+                this.uf = endereco.uf();
+            }
+        }
+        if(endereco.complemento() != null){
+            this.complemento = endereco.complemento();
+        }
+        if(endereco.numero() != null){
+            this.numero = endereco.numero();
+        }
+     }
 }
